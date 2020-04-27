@@ -1,0 +1,20 @@
+    "accessories": [
+        {
+            "accessory": "HTTP-RGB",
+            "name": "RGB Strip",
+            "service": "Light",
+            "switch": {
+                "status": "http://10.200.10.201:80/status",
+                "powerOn": "http://10.200.10.201:80/on",
+                "powerOff": "http://10.200.10.201:80/off"
+            },
+            "color": {
+                "status": "http://10.200.10.201:80/color",
+                "url": "http://10.200.10.201:80/set/%s"
+            },
+            "brightness": {
+                "status": "http://10.200.10.201:80/bright",
+                "url": "http://10.200.10.201:80/brt/%s"
+            }
+        }
+    ],
